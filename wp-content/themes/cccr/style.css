@@ -450,6 +450,7 @@ small {
   margin-right: auto;
   padding-left: 2.5%;
   padding-right: 2.5%;
+  min-height: 263px;
 }
 
 .slicknav_nav {
@@ -461,16 +462,13 @@ small {
 
 .slicknav_btn {
   position: absolute;
-  right: 0;
+  right: 2.5%;
   z-index: 100;
+  bottom: 0px;
 }
 
 .mobile-navigation {
   display: none;
-}
-
-.slicknav_btn {
-  padding: 6% 4% 0.438em 0.625em;
 }
 
 .main-navigation {
@@ -480,6 +478,12 @@ small {
 }
 .main-navigation .menu {
   display: none;
+}
+
+#main-navigation-location {
+  min-height: 390px;
+  position: absolute;
+  width: 100%;
 }
 
 .main-navigation ul li {
@@ -532,6 +536,11 @@ small {
 @media (max-width: 1140px) {
   .slicknav_menu {
     padding: 0;
+    min-height: 406px;
+  }
+
+  .slicknav_btn {
+    top: 40%;
   }
 
   .slicknav_nav {
@@ -547,10 +556,6 @@ small {
   .main-navigation ul li a, .slicknav_menu ul li a {
     font-size: 3em;
   }
-
-  .site-motto.hidden {
-    visibility: visible;
-  }
 }
 @media (max-width: 675px) {
   .main-navigation ul li a, .slicknav_menu ul li a {
@@ -558,12 +563,11 @@ small {
   }
 
   .slicknav_btn {
-    padding: 8% 5% 0.438em 0.625em;
+    top: 27%;
   }
-}
-@media (max-width: 350px) {
-  .slicknav_btn {
-    padding: 11% 5% 0.438em 0.625em;
+
+  .slicknav_nav {
+    background: #000006;
   }
 }
 .container {
