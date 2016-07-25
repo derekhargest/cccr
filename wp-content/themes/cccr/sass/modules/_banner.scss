@@ -1,0 +1,23 @@
+.banner-wrapper{
+  position: relative;
+  .banner-overlay{
+    position: absolute;
+    top: 19.222em;
+    width: 100%;
+    h3{
+      text-align: center;
+      font-size: 4.5em;
+      font-weight: 200;
+      line-height: 1.15em;
+    }
+    .overlay-logo{
+      margin: 0 auto;
+      max-width: 144px;
+      margin-top: 3.555em;
+    }
+  }
+}
+
+.banner.main-banner{
+  position: relative;
+}

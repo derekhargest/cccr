@@ -1,0 +1,122 @@
+.slicknav_menu{
+	position: relative;
+}
+
+.slicknav_nav{
+	display: block;
+	position: absolute;
+	z-index: 200;
+	padding-top: 2.6em;
+	li{
+		padding-left: 3.5%;
+	}
+}
+
+.slicknav_btn{
+    position: absolute;
+    right: 0;
+    z-index: 100;
+}
+
+.mobile-navigation{
+	display: none;
+}
+
+.slicknav_btn{
+	padding: 6% 5% 0.438em 0.625em;
+}
+
+.main-navigation{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+		.menu{
+			display: none;
+		}
+}
+
+
+
+.main-navigation{
+	ul li{
+		float: left;
+		width: 16.6667%;
+		text-align: center;
+		line-height: 1rem;
+		padding-top: 4.5%;
+		padding-bottom: 2.65%;
+		height: 3.5rem;
+		&:hover{
+			cursor: pointer;
+		}
+		&:hover a{
+		 border-bottom: 1px solid rgba(237, 29, 126, 1);
+		 color: rgba(237, 29, 126,1);
+	 }
+		a{
+			-webkit-transition: all .25s ease-in-out;
+		-moz-transition: all .25s ease-in-out;
+		-ms-transition: all .25s ease-in-out;
+		-o-transition: all .25s ease-in-out;
+		border-bottom: 1px solid rgba(237, 29, 126, 0);
+
+		}
+
+		&:last-child{
+			background: #ccc;
+			&:hover{
+				opacity: .85;
+				a{
+					text-decoration: none !important;
+					border-bottom: 1px solid rgba(237, 29, 126, 0) !important;
+				}
+			}
+		}
+	}
+	.current_page_item a{
+	}
+}
+
+@media (max-width: 930px){
+  .slicknav_menu .slicknav_icon{
+    width: 2.43em;
+  }
+  .slicknav_menu .slicknav_icon-bar{
+    height: .36em;
+  }
+  .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar{
+    margin-top: .36em;
+  }
+}
+
+@media (max-width: 1140px){
+  .slicknav_nav{
+    position: relative;
+    z-index: 50;
+  }
+  .slicknav_nav li{
+    padding-right: 15%;
+    padding-left: 1%;
+  }
+  .main-navigation ul li a, .slicknav_menu ul li a{
+    font-size: 3em;
+  }
+  .site-motto.hidden{
+    visibility: visible;
+  }
+}
+
+@media (max-width: 675px){
+  .main-navigation ul li a, .slicknav_menu ul li a{
+    font-size: 2em;
+  }
+  .slicknav_btn{
+    padding: 8% 5% 0.438em 0.625em;
+  }
+}
+
+@media (max-width: 350px){
+  .slicknav_btn{
+    padding: 11% 5% 0.438em 0.625em;
+  }
+}

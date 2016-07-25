@@ -1,0 +1,47 @@
+section.about{
+  background: url('images/bottom-white-stripe.png') no-repeat $c-white;
+	color: $c-real-black;
+	position: relative;
+ 	z-index: 1;
+  background-size: contain;
+  margin-top: -22%;
+  padding-top: 22%;
+	h3{
+		color: $c-real-black;
+	}
+	p{
+		margin-top: 1.5em;
+		@include span(6 of 12);
+	}
+	.about-image{
+		@include span(6 of 12 last);
+		img{
+			width: 52.1739%;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media (max-width: 930px){
+  section.about{
+    padding-bottom: 4em;
+  }
+}
+
+@media (max-width: 500px){
+  section.about{
+    padding-top: 32%;
+    h3{
+      text-align: center;
+    }
+    p{
+      width: 100%;
+      text-align: center;
+      margin-right: 0;
+    }
+    .about-image{
+      width: 100%;
+      margin-top: 1em;
+    }
+  }
+}

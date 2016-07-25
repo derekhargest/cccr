@@ -1,0 +1,44 @@
+#primary{
+	overflow: hidden;
+}
+
+.blurred{
+	-webkit-filter: blur(5px); /* Chrome, Safari, Opera */
+    filter: blur(5px);
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+.jump-link{
+  position: relative;
+  bottom: 75px;
+}
+
+
+.main-image {
+	position: relative;
+	z-index: 7;
+	img{
+		width: 100%;
+	}
+}
+
+.site-branding{
+	width: 100%;
+	padding-top: 1.125em;
+	position: absolute;
+	z-index: 10;
+	h1{
+		width: 31.914%;
+		margin: 0 auto;
+    min-width: 160px;
+	}
+}
+
+@media (max-width: 500px){
+  .site-branding h1{
+    margin-left: 9%;
+  }
+}

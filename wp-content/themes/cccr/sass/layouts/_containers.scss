@@ -1,0 +1,42 @@
+@import "susy";
+
+$susy: (
+  columns: 12,
+  gutters: .25,
+);
+
+.container{
+	@include container(1410px);
+	@include clearfix;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.content-container{
+  width: 100%;
+}
+
+.container.main{
+	position: relative;
+	z-index: 10;
+	position: absolute;
+	max-width: none;
+	width: 100%;
+}
+
+.container.header{
+	padding-top: 3.75em;
+}
+
+@media (min-width: 450px){
+  .content-container{
+    @include container(1170px);
+    float: none;
+    margin: 0 auto;
+    margin-top: 13.333em;
+    margin-bottom: 5em;
+      &.bottom{
+        margin-top: 3em;
+      }
+  }
+}

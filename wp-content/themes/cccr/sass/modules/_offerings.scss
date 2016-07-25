@@ -1,0 +1,66 @@
+section.offerings{
+	background-color: $c-real-black;
+	position: relative;
+	padding-top: 9.875em;
+	.offerings_1, .offerings_2{
+		padding-top: 4em;
+		h4{
+			font-size: 1.75em;
+			margin-bottom: 1em;
+		}
+		ul li{
+			font-size: 1.75em;
+			line-height: 1em;
+			font-weight: 600;
+			display: block;
+			float: left;
+			clear: both;
+			margin-bottom: .65em;
+			&:before{
+				content: '';
+				background: url('images/bullet.png');
+				background-size: cover;
+				width: 13px;
+				height: 24px;
+				display: block;
+				float: left;
+				margin-right: 1.25em;
+			}
+		}
+	}
+	.offerings_1{
+		@include span(6 of 12);
+	}
+	.offerings_2{
+		@include span(6 of 12 last)
+	}
+}
+
+@media (max-width: 780px){
+  section.offerings{
+    h3{
+      text-align: center;
+    }
+    .offerings_1, .offerings_2{
+      width: 100%;
+      h4{
+        text-align: center;
+        margin-bottom: 1em;
+        font-size: 2em;
+      }
+      ul li{
+        width: 100%;
+        text-align: center;
+        &:before{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 410px){
+  section.offerings .offerings_1 ul li, section.offerings .offerings_2 ul li{
+    font-size: 1.5em;
+  }
+}
