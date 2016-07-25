@@ -1,5 +1,10 @@
 .slicknav_menu{
 	position: relative;
+  max-width: 1530px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
 }
 
 .slicknav_nav{
@@ -7,9 +12,6 @@
 	position: absolute;
 	z-index: 200;
 	padding-top: 2.6em;
-	li{
-		padding-left: 3.5%;
-	}
 }
 
 .slicknav_btn{
@@ -23,7 +25,7 @@
 }
 
 .slicknav_btn{
-	padding: 6% 5% 0.438em 0.625em;
+	padding: 6% 4% 0.438em 0.625em;
 }
 
 .main-navigation{
@@ -90,6 +92,9 @@
 }
 
 @media (max-width: 1140px){
+  .slicknav_menu{
+    padding: 0;
+  }
   .slicknav_nav{
     position: relative;
     z-index: 50;
