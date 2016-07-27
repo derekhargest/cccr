@@ -26,8 +26,7 @@ get_header(); ?>
 					<a name="about" class="jump-link"></a>
 					<div class="container">
 						<h3>About Charm City <br/>Coffee Roasters</h3>
-						<p>Starting with the bean, we are on a mission to bring a better cup of coffee to the streets of Charm City. We are dedicated to good coffee and a better Baltimore, while we produce a high end product for every citizen.</p>
-						<a href="#">Contact Us</a>
+						<p>Starting with the bean, we are on a mission to bring a better cup of coffee to the streets of Charm City. We are dedicated to good coffee and a better Baltimore, while we produce a high end product for every citizen.<a href="#contact" class="about-link">Contact Us</a></p>
 						<div class="about-image">
 							<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/bag-image.png" alt="">
 						</div>
@@ -97,7 +96,7 @@ get_header(); ?>
 						<div class="offerings_2">
 							<h4>Blends</h4>
 							<ul>
-								<li>Bawler Blend</li>
+								<li>Bawlmer Blend</li>
 								<li>French Roast</li>
 								<li>Harbor Roast</li>
 								<li>Summertime Espresso</li>
