@@ -20,16 +20,20 @@ section.about{
 			margin: 0 auto;
 		}
 	}
-  a{
+  a.about-link{
     color: $c-real-black;
-    width: 100%;
-    float: left;
-    text-align: right;
+    width: 35%;
+    clear: both;
+    float: right;
+    text-align: center;
     font-size: .75em;
-    padding-top: 3em;
+    margin-top: 3em;
     text-decoration: none;
+    border: 3px solid #ffca05;
+    line-height: 1em;
+    padding: .5em;
     &:hover{
-      text-decoration: underline;
+      background-color: #ffca05;
     }
   }
 }

@@ -25,6 +25,7 @@
 			duration: '1000',
 			easingOpen: "swing",
 			easingClose: "swing",
+      openedSymbol: "&#9660;",
 			closeOnClick:true,
 			init: function() {
         $blur = $('#primary');
