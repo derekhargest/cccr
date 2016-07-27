@@ -40,10 +40,12 @@ input{
 
 .site-main{
 	width: 100%;
+	position: relative;
 }
 
 .content-area{
 	@include clearfix;
+	overflow: visible;;
 }
 
 .button{

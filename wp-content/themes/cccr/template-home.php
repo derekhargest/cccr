@@ -40,29 +40,39 @@ get_header(); ?>
 						<h3>Where to buy <br />Charm City Coffee</h3>
 						<div class="locations-list">
 							<div class="location_item">
-								<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
-								<p>Business Name</p>
-								<p>Community</p>
+								<a href="#" class="location-link">
+									<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
+									<p>Business Name</p>
+									<p>Community</p>
+								</a>
 							</div>
 							<div class="location_item">
-								<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
-								<p>Business Name</p>
-								<p>Community</p>
+								<a href="#" class="location-link">
+									<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
+									<p>Business Name</p>
+									<p>Community</p>
+								</a>
 							</div>
 							<div class="location_item">
-								<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
-								<p>Business Name</p>
-								<p>Community</p>
+								<a href="#" class="location-link">
+									<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
+									<p>Business Name</p>
+									<p>Community</p>
+								</a>
 							</div>
 							<div class="location_item">
-								<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
-								<p>Business Name</p>
-								<p>Community</p>
+								<a href="#" class="location-link">
+									<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
+									<p>Business Name</p>
+									<p>Community</p>
+								</a>
 							</div>
 							<div class="location_item">
-								<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
-								<p>Business Name</p>
-								<p>Community</p>
+								<a href="#" class="location-link">
+									<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
+									<p>Business Name</p>
+									<p>Community</p>
+								</a>
 							</div>
 						</div>
 					</div>

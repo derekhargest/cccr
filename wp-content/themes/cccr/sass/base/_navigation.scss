@@ -6,13 +6,14 @@
   padding-left: 2.5%;
   padding-right: 2.5%;
   min-height: 263px;
+	background: transparent;
 }
 
 .slicknav_nav{
 	display: block;
 	position: absolute;
 	z-index: 200;
-	padding-top: 2.6em;
+	padding-top: 3.15em;
 }
 
 .slicknav_btn{
@@ -39,6 +40,7 @@
   min-height: 390px;
   position: absolute;
   width: 100%;
+	z-index: 75;
 }
 
 

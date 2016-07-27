@@ -1,5 +1,6 @@
 #primary{
-	overflow: hidden;
+	position: relative;
+	z-index: 50;
 }
 
 .blurred{
@@ -27,9 +28,9 @@
 
 .site-branding{
 	width: 100%;
-	padding-top: 1.125em;
 	position: absolute;
 	z-index: 10;
+	top: -2%;
 	h1{
 		width: 31.914%;
 		margin: 0 auto;
@@ -41,4 +42,10 @@
   .site-branding h1{
     margin-left: 9%;
   }
+}
+
+@media (max-width: 1140px){
+	.site-branding{
+		top: 0;
+	}
 }

@@ -68,7 +68,8 @@ Tags: responsive-layout, post-formats
  
 */
 #primary {
-  overflow: hidden;
+  position: relative;
+  z-index: 50;
 }
 
 .blurred {
@@ -96,9 +97,9 @@ Tags: responsive-layout, post-formats
 
 .site-branding {
   width: 100%;
-  padding-top: 1.125em;
   position: absolute;
   z-index: 10;
+  top: -2%;
 }
 .site-branding h1 {
   width: 31.914%;
@@ -109,6 +110,11 @@ Tags: responsive-layout, post-formats
 @media (max-width: 500px) {
   .site-branding h1 {
     margin-left: 9%;
+  }
+}
+@media (max-width: 1140px) {
+  .site-branding {
+    top: 0;
   }
 }
 @font-face {
@@ -166,7 +172,6 @@ h2 {
 h3 {
   font-size: 2.35em;
   line-height: 1.20em;
-  letter-spacing: -0.02em;
 }
 
 a {
@@ -451,13 +456,14 @@ small {
   padding-left: 2.5%;
   padding-right: 2.5%;
   min-height: 263px;
+  background: transparent;
 }
 
 .slicknav_nav {
   display: block;
   position: absolute;
   z-index: 200;
-  padding-top: 2.6em;
+  padding-top: 3.15em;
 }
 
 .slicknav_btn {
@@ -484,6 +490,7 @@ small {
   min-height: 390px;
   position: absolute;
   width: 100%;
+  z-index: 75;
 }
 
 .main-navigation ul li {
@@ -682,11 +689,13 @@ input {
 
 .site-main {
   width: 100%;
+  position: relative;
 }
 
 .content-area {
   overflow: hidden;
   *zoom: 1;
+  overflow: visible;
 }
 
 .button {
@@ -905,6 +914,13 @@ section.locations .location_item img {
 section.locations .location_item p {
   text-align: center;
 }
+section.locations .location_item .location-link {
+  text-decoration: none;
+}
+section.locations .location_item .location-link:hover {
+  transition: all 200ms ease;
+  text-decoration: underline;
+}
 section.locations .location_item:nth-child(3) {
   width: 31.81818%;
   float: right;
@@ -1066,6 +1082,20 @@ section.contact #nf_submit_1 input {
   line-height: .65em;
   letter-spacing: -0.02em;
 }
+section.contact #nf_submit_1:hover {
+  background: #9e7d00;
+  transition: background 100ms ease;
+}
+section.contact #nf_submit_1:hover:after {
+  border-top-color: #524005;
+  transition: border-top-color 100ms ease;
+}
+section.contact #nf_submit_1:active {
+  transform: translateY(16px);
+}
+section.contact #nf_submit_1:active:after {
+  border: 0px;
+}
 section.contact .social {
   max-width: 860px;
   margin-left: auto;
@@ -1085,6 +1115,9 @@ section.contact .social ul li {
   display: block;
   width: 60px;
   margin-left: 30px;
+}
+section.contact .social ul li a:hover img {
+  opacity: .75;
 }
 
 @media (min-width: 930px) and (max-width: 1140px) {

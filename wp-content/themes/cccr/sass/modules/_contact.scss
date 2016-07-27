@@ -56,6 +56,20 @@ section.contact{
 			line-height: .65em;
 			letter-spacing: -0.02em;
 		}
+		&:hover{
+			background: darken(#ffca05, 20%);
+			transition: background 100ms ease;
+			&:after{
+				border-top-color: darken(#b28a0b, 20%);
+				transition: border-top-color 100ms ease;
+			}
+		}
+		&:active{
+			 transform: translateY(16px);
+			 &:after{
+				 border: 0px;
+			 }
+		}
 	}
 	.social{
 		@include container(860px);
@@ -67,6 +81,11 @@ section.contact{
 				display: block;
 				width: 60px;
 				margin-left: 30px;
+				a{
+					&:hover img{
+						opacity: .75;
+					}
+				}
 			}
 		}
 	}

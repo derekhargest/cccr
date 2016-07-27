@@ -17,6 +17,13 @@ section.locations{
 		p{
 			text-align: center;
 		}
+		.location-link{
+		  text-decoration: none;
+			&:hover{
+				transition: all 200ms ease;
+				text-decoration: underline;
+			}
+		}
 	}
 	.location_item:nth-child(3){
 			@include span(3 of 9 last);
