@@ -60,6 +60,12 @@
   });
 });
 
+$(document).ready(function(){
+	$('.slicknav_icon').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+
 
 </script>
 
