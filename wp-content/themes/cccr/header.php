@@ -26,6 +26,8 @@
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 		<meta property="og:image" content="<?php echo esc_url( get_template_directory_uri() ) ?>/images/facebook-og.jpg" />
+		<meta property="og:title" content="<?php wp_title( '|', true, 'right' ); ?><?php bloginfo( 'name' ); ?>" />
+		<meta property="og:description" content="Starting with the bean, we are on a mission to bring a better cup of coffee to the streets of Charm City. We are dedicated to good coffee and a better Baltimore, while we produce a high end product for every citizen." />
 		<?php wp_head(); ?>
 	</head>
 
