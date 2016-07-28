@@ -93,8 +93,8 @@ get_header(); ?>
 
 						<div class="social">
 							<ul>
-								<li><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/insta-logo.jpg" alt=""></a></li>
-								<li><a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/facebook-logo.jpg" alt=""></a></li>
+								<li><a href="https://www.instagram.com/charmcityroasters/"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/insta-logo.jpg" alt=""></a></li>
+								<li><a href="https://www.facebook.com/Charm-City-Coffee-Roasters-1584998081826226/"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/facebook-logo.jpg" alt=""></a></li>
 							</ul>
 						</div>
 					</div>
