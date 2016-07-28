@@ -44,7 +44,7 @@ get_header(); ?>
 								while ( $loop->have_posts() ) : $loop->the_post();
 								?>
 								<div class="location_item">
-									<a href="<?php echo the_field('google_maps_link'); ?>" class="location-link">
+									<a href="<?php echo the_field('google_maps_link'); ?>" class="location-link" target="_blank">
 										<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
 										<p><?php echo the_field('location_name'); ?></p>
 										<p><?php echo the_field('location_community'); ?></p>
@@ -93,8 +93,8 @@ get_header(); ?>
 
 						<div class="social">
 							<ul>
-								<li><a href="https://www.instagram.com/charmcityroasters/"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/insta-logo.jpg" alt=""></a></li>
-								<li><a href="https://www.facebook.com/Charm-City-Coffee-Roasters-1584998081826226/"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/facebook-logo.jpg" alt=""></a></li>
+								<li><a href="https://www.instagram.com/charmcityroasters/" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/insta-logo.jpg" alt=""></a></li>
+								<li><a href="https://www.facebook.com/Charm-City-Coffee-Roasters-1584998081826226/" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/facebook-logo.jpg" alt=""></a></li>
 							</ul>
 						</div>
 					</div>
