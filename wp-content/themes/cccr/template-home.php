@@ -47,7 +47,7 @@ get_header(); ?>
 									<a href="<?php echo the_field('google_maps_link'); ?>" class="location-link" target="_blank">
 										<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
 										<p><?php echo the_field('location_name'); ?></p>
-										<p><?php echo the_field('location_community'); ?></p>
+										<p class="community"><?php echo the_field('location_community'); ?></p>
 									</a>
 								</div>
 							<?php endwhile;?>
