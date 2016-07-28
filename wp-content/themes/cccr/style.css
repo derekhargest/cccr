@@ -1164,6 +1164,7 @@ section.contact .text-wrap.label-inside input, section.contact .textarea-wrap.la
   font-weight: 700;
   padding: .75em 0;
   letter-spacing: -0.01em;
+  border-radius: 0;
 }
 section.contact .field-wrap {
   margin-top: 2.3em;
