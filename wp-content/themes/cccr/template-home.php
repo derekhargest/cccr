@@ -4,8 +4,8 @@
 /**
  * The template for displaying the home page
  *
- * @package Default Wordpress
- * @subpackage default wp
+ * @package Charm City Coffee Roasters
+ * @subpackage cccr
  * @since 2016
  */
 
@@ -14,7 +14,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 				<div class="site-branding">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/main-logo.png" alt="<?php bloginfo( 'name' ); ?>"></a></h1>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/main-logo.gif" alt="<?php bloginfo( 'name' ); ?>"></a></h1>
 				</div>
 			<div class="main-image">
 				<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/roasting-image-angled.gif" alt="<?php bloginfo( 'name' ); ?>">
