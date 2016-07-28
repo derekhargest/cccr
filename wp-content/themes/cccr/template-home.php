@@ -17,7 +17,7 @@ get_header(); ?>
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/main-logo.png" alt="<?php bloginfo( 'name' ); ?>"></a></h1>
 				</div>
 			<div class="main-image">
-				<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/roasting-image-angled.png" alt="<?php bloginfo( 'name' ); ?>">
+				<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/roasting-image-angled.gif" alt="<?php bloginfo( 'name' ); ?>">
 			</div>
 
 
@@ -38,41 +38,19 @@ get_header(); ?>
 					<div class="container">
 						<h3>Where to buy <br />Charm City Coffee</h3>
 						<div class="locations-list">
-							<div class="location_item">
-								<a href="#" class="location-link">
-									<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
-									<p>Business Name</p>
-									<p>Community</p>
-								</a>
-							</div>
-							<div class="location_item">
-								<a href="#" class="location-link">
-									<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
-									<p>Business Name</p>
-									<p>Community</p>
-								</a>
-							</div>
-							<div class="location_item">
-								<a href="#" class="location-link">
-									<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
-									<p>Business Name</p>
-									<p>Community</p>
-								</a>
-							</div>
-							<div class="location_item">
-								<a href="#" class="location-link">
-									<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
-									<p>Business Name</p>
-									<p>Community</p>
-								</a>
-							</div>
-							<div class="location_item">
-								<a href="#" class="location-link">
-									<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
-									<p>Business Name</p>
-									<p>Community</p>
-								</a>
-							</div>
+							<?php
+								$args = array('post_type' => 'location');
+								$loop = new WP_Query( $args );
+								while ( $loop->have_posts() ) : $loop->the_post();
+								?>
+								<div class="location_item">
+									<a href="<?php echo the_field('google_maps_link'); ?>" class="location-link">
+										<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
+										<p><?php echo the_field('location_name'); ?></p>
+										<p><?php echo the_field('location_community'); ?></p>
+									</a>
+								</div>
+							<?php endwhile;?>
 						</div>
 					</div>
 				</section>
