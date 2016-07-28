@@ -28,7 +28,7 @@ get_header(); ?>
 						<h3>About Charm City <br/>Coffee Roasters</h3>
 						<p>Starting with the bean, we are on a mission to bring a better cup of coffee to the streets of Charm City. We are dedicated to good coffee and a better Baltimore, while we produce a high end product for every citizen.<a href="#contact" class="about-link">Contact Us</a></p>
 						<div class="about-image">
-							<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/bag-image.png" alt="">
+							<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/bag-image.png" alt="Charm City Coffee Roasters Bag">
 						</div>
 					</div>
 				</section>
@@ -45,7 +45,7 @@ get_header(); ?>
 								?>
 								<div class="location_item">
 									<a href="<?php echo the_field('google_maps_link'); ?>" class="location-link" target="_blank">
-										<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="">
+										<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-marker.png" alt="Location">
 										<p><?php echo the_field('location_name'); ?></p>
 										<p class="community"><?php echo the_field('location_community'); ?></p>
 									</a>
@@ -93,15 +93,15 @@ get_header(); ?>
 
 						<div class="social">
 							<ul>
-								<li><a href="https://www.instagram.com/charmcityroasters/" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/insta-logo.jpg" alt=""></a></li>
-								<li><a href="https://www.facebook.com/Charm-City-Coffee-Roasters-1584998081826226/" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/facebook-logo.jpg" alt=""></a></li>
+								<li><a href="https://www.instagram.com/charmcityroasters/" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/insta-logo.jpg" alt="Facebook Icon"></a></li>
+								<li><a href="https://www.facebook.com/Charm-City-Coffee-Roasters-1584998081826226/" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/facebook-logo.jpg" alt="Instagram Icon"></a></li>
 							</ul>
 						</div>
 					</div>
 				</section>
 
 				<section class="closer">
-					<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/baltimore-street.jpg" alt="">
+					<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/baltimore-street.jpg" alt="Baltimore">
 				</section>
 
   		<?php
