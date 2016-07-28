@@ -1127,6 +1127,9 @@ section.contact {
 section.contact h3 {
   color: #000006;
 }
+section.contact .ninja-forms-response-msg p {
+  color: #ffca05;
+}
 section.contact .ninja-forms-required-items {
   display: none;
 }
