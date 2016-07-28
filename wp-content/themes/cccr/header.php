@@ -25,7 +25,7 @@
 		<script src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.slicknav.js"></script>
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
-		<meta property="og:image" content="<?php echo esc_url( get_template_directory_uri() ) ?>/images/main-logo.gif" />
+		<meta property="og:image" content="<?php echo esc_url( get_template_directory_uri() ) ?>/images/facebook-og.jpg" />
 		<?php wp_head(); ?>
 	</head>
 
