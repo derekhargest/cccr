@@ -1032,10 +1032,6 @@ section.locations .location_item:nth-child(3) {
   margin-right: 0;
 }
 
-section.locations .location_item p.community {
-  font-size: 1.25em;
-}
-
 @media (max-width: 780px) {
   section.locations h3 {
     text-align: center;
@@ -1055,6 +1051,10 @@ section.locations .location_item p.community {
   section.locations .location_item:nth-child(3) {
     width: 100%;
     margin-right: 0;
+  }
+
+  section.locations .location_item p.community {
+    font-size: 1.5em;
   }
 }
 section.offerings {
