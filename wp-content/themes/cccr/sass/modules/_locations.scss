@@ -11,15 +11,15 @@ section.locations{
 	.location_item{
 		@include span(3 of 9);
 		margin-top: 5em;
+		.community{
+			font-size: 1.25em;
+		}
 		img{
 			margin: 0 auto;
 			opacity: 0.75;
 		}
 		p{
 			text-align: center;
-		}
-		p.community{
-			font-size: 1.25em;
 		}
 		.location-link{
 		  text-decoration: none;
@@ -33,6 +33,11 @@ section.locations{
 			@include span(3 of 9 last);
 	}
 }
+
+section.locations .location_item p.community{
+	font-size: 1.25em;
+}
+
 
 @media (max-width: 780px){
   section.locations{
