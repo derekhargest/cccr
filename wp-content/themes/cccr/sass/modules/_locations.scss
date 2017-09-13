@@ -29,8 +29,12 @@ section.locations{
 			}
 		}
 	}
-	.location_item:nth-child(3){
+	.location_item:nth-child(3n){
 			@include span(3 of 9 last);
+			float: left;
+	}
+	.location_item:nth-child(4){
+		clear: left;
 	}
 }
 
@@ -55,7 +59,7 @@ section.locations{
         font-size: 2em;
       }
     }
-    .location_item:nth-child(3){
+    .location_item:nth-child(3n){
       width: 100%;
       margin-right: 0;
     }

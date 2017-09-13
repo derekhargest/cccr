@@ -1026,10 +1026,14 @@ section.locations .location_item .location-link:hover {
   transition: all 200ms ease;
   text-decoration: underline;
 }
-section.locations .location_item:nth-child(3) {
+section.locations .location_item:nth-child(3n) {
   width: 31.81818%;
   float: right;
   margin-right: 0;
+  float: left;
+}
+section.locations .location_item:nth-child(4) {
+  clear: left;
 }
 
 @media (max-width: 780px) {
@@ -1048,7 +1052,7 @@ section.locations .location_item:nth-child(3) {
   section.locations .location_item p {
     font-size: 2em;
   }
-  section.locations .location_item:nth-child(3) {
+  section.locations .location_item:nth-child(3n) {
     width: 100%;
     margin-right: 0;
   }
